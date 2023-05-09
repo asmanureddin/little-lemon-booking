@@ -4,7 +4,7 @@ const Nav = () => {
     return (
         <div>
             <h4>This in the Nav Semantic Section</h4>
-            <img alt="logo" src="/images/logo.png"></img>
+            <img alt="logo" src="/src/images/logo.png"/>
             <ul>
                 <li><a href="/home">HOME</a></li>
                 <li><a href="/menu">MENU</a></li>
