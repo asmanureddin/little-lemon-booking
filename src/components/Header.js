@@ -1,16 +1,20 @@
 import React from "react";
-import HeroImage from "/src/images/restauranfood.jpg"
+import heroImage from "../images/restauranfood.jpg"
 
 const Header = () => {
     return (
         <div className="header-div">
-            <div>
-                <h1>HERO TITLE</h1>
-                <h2>HERO subtitle</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ultricies nunc, quis porta lectus. Phasellus maximus nec urna ac egestas. Sed aliquet felis lectus, elementum sodales nibh dignissim vel. Nulla lobortis dui ut mi interdum consectetur eget interdum quam. Sed vehicula, dui a maximus egestas, lorem elit consectetur felis, vel molestie justo elit in risus.</p>
+            <div className="back-rect"></div>
+            <div className="hero-left">
+                <h1>Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ultricies nunc, quis porta lectus. Phasellus maximus nec urna ac egestas. Sed aliquet felis lectus, elementum sodales nibh dignissim vel.</p>
             </div>
-            <div>
-                <img alt="Hero Restaurant Food" src={HeroImage}/>
+            <div className="hero-right">
+                <img alt="Hero Restaurant Food"
+                src={heroImage}
+                className="hero-image"
+                width={400} height={400}/>
             </div>
         </div>
     )
