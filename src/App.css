@@ -1,38 +1,85 @@
-.App {
+
+.App{
+  display: grid;
+  grid-template-areas: 
+  "app-nav"
+  "app-header"
+  "app-main"
+  "app-footer";
+  width: 100%;
+  height: max-content;
+ 
+}
+
+.app-nav{
+  display: grid;
+  grid-area: app-nav;
+ 
+}
+
+.app-header{
+  grid-area: app-header;
+}
+
+.app-main{
+  grid-area: app-main;
+}
+
+.app-footer{
+  grid-area: app-footer;
+}
+
+.nav-div{
+  display: grid;
+  grid-template-areas: "logo-div links-div";
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem;
+  padding: 3rem;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.logo-div{
+  grid-area: logo-div;
+  justify-self: left;
+  padding: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-nav{
+  max-width: auto;
+  min-width: auto;
+  justify-self: left;
+}
+
+.links-div{
+  grid-area: links-div;
+  justify-content: center;
+  align-items: center;
+}
+
+.list{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+}
+
+.list li{
+  padding: 0.5em;
+}
+
+a:link{
+  color: #495E57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #495E57;
+}
+
+.header-div{
+  background-color: #495E57;
 }

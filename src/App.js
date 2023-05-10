@@ -7,14 +7,14 @@ import Header from './components/Header';
 function App() {
   return (
     <body className="App">
-      <Nav/>
-      <Header/>
-      <main>
+      <Nav className="app-nav"/>
+      <Header className="app-header"/>
+      <main className="app-main">
         <section></section>
         <section></section>
         <section></section>
       </main>
-      <Footer/>
+      <Footer className="app-footer"/>
     </body>
   );
 }
