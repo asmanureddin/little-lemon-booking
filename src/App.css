@@ -85,6 +85,10 @@ a:visited{
   color: #495E57;
 }
 
+a:hover{
+  border-bottom: #FBDABB solid 1px;
+}
+
 .header-div{
   display: grid;
   grid-template-areas: "hero-left hero-right";
