@@ -100,7 +100,7 @@ div.back-rect{
   height: 200px;
   top: 230px;
   left: 0px;
-  background-color: #495E57;
+  background-color: #EE9972;
   margin: 0;
   text-align:center;
   width: 100%;
@@ -111,7 +111,7 @@ div.back-rect{
   grid-area: hero-left;
   position: relative;
   margin: 1rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 5rem;
 }
@@ -148,7 +148,6 @@ div.back-rect{
   grid-area: hero-right;
   position: relative;
   margin: 1rem;
-  justify-content: center;
   text-align: center;
 }
 
@@ -161,6 +160,7 @@ div.back-rect{
 .call-to-action-section{
   display: grid;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   grid-template-columns: repeat(2,1fr);
   align-content: left;
 }
@@ -174,14 +174,22 @@ div.back-rect{
   border: none;
   border-radius: 1em;
   font-family: 'karla' , sans-serif;
-  font-weight: 600;
-  font-size: 1.1em;
+  font-weight: bold;
+  font-size: 1.2em;
   color: #495E57;
+  height: 4.5rem ;
 }
 
+/* background: #FBDABB; */
+
 .call-to-action-section button:hover{
-  border-bottom: 7px solid #EE9972;
+  padding-top: 1.5rem;
+  cursor: pointer;
+  border-bottom: 0.5em solid #EE9972;
+  transition: 450ms;
+  transition-timing-function: ease-in-out;
 }
+
 
 .homepage-section{
   margin: 1rem;
