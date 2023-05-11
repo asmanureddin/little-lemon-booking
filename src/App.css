@@ -11,12 +11,12 @@
   "app-main"
   "app-footer";
   height: max-content;
+  
 }
 
 .app-nav{
   display: grid;
   grid-area: app-nav;
- 
 }
 
 .app-header{
@@ -29,6 +29,7 @@
 
 .app-footer{
   grid-area: app-footer;
+  padding: 0px;
 }
 
 .nav-div{
@@ -41,7 +42,6 @@
   text-align: center;
   justify-content: center;
   align-content: center;
-  
 
 }
 
@@ -89,31 +89,30 @@ a:visited{
   display: grid;
   grid-template-areas: "hero-left hero-right";
   grid-template-columns: 1fr 1fr;
-
+  background-color: #495E57;
 }
 
-
+/*
 div.back-rect{
   position: absolute;
   align-self: center;
-  min-width: 750px;
-  height: 20rem;
+  min-width: 760px;
+  height: 200px;
+  top: 230px;
   left: 0px;
   background-color: #495E57;
   margin: 0;
   text-align:center;
   width: 100%;
 }
-
-
-
+*/
 
 .hero-left{
   grid-area: hero-left;
   position: relative;
   margin: 1rem;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   padding-left: 5rem;
 }
 
@@ -159,6 +158,88 @@ div.back-rect{
   object-fit: cover;
 }
 
+.call-to-action-section{
+  display: grid;
+  padding-top: 1rem;
+  grid-template-columns: repeat(2,1fr);
+  align-content: left;
+}
+
+.call-to-action-section button{
+  padding: 1rem;
+  margin: 1rem;
+  margin-right: 2rem;
+  margin-left: 0;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 1em;
+  font-family: 'karla' , sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #495E57;
+}
+
+.call-to-action-section button:hover{
+  border-bottom: 7px solid #EE9972;
+}
+
+.homepage-section{
+  margin: 1rem;
+  padding: 3rem;
+}
+
+.about{
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: #495E57;
+}
+
+.about-left{
+  margin: 3rem;
+  padding-right: 1rem;
+  color: #EDEFEE;
+  width: 30vw;
+  height: 50vh;
+  white-space: normal;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.about-left h1{
+  color: #F4CE14;
+  font-family: 'Markazi Text', serif;
+  font-size: 3em;
+  line-height: 0.8em;
+  margin: 0;
+}
+
+.about-left h2{
+  font-family: 'Markazi Text', serif;
+  font-size: 2em;
+  margin-top: 0;
+  line-height: 0.6em;
+}
+
+.about-left p{
+  text-overflow: ellipsis;
+  font-family: 'karla' , sans-serif;
+  font-weight: 300;
+}
+
+.chief-cooking-image{
+  object-fit: cover;
+  margin-right: 1rem;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.adrian-mario-image{
+  object-fit: cover;
+  margin-left: 1em;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
 
 .footer-sec{
   background-color: #495E57;
@@ -167,7 +248,6 @@ div.back-rect{
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 1rem;
-
 }
 
 .footer-sec ul{

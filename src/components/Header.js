@@ -1,5 +1,6 @@
 import React from "react";
-import heroImage from "../images/restauranfood.jpg"
+import heroImage from "../images/restauranfood.jpg";
+import CallToAction from "./CallToAction";
 
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ultricies nunc, quis porta lectus. Phasellus maximus nec urna ac egestas. Sed aliquet felis lectus, elementum sodales nibh dignissim vel.</p>
+                <CallToAction/>
             </div>
             <div className="hero-right">
                 <img alt="Hero Restaurant Food"
