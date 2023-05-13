@@ -177,22 +177,36 @@ div.back-rect{
   background-color: #F4CE14;
   border: none;
   border-radius: 1em;
+  
+  height: 4.5rem ;
+  -webkit-transition: 2s ease-in-out  background;
+  -moz-transition: 2s ease-in-out background;
+  -o-transition: 2s ease-in-out background;
+  transition: 2s ease-in-out background;
+}
+
+.call-to-action-section button span{
   font-family: 'karla' , sans-serif;
   font-weight: bold;
   font-size: 1.2em;
   color: #495E57;
-  height: 4.5rem ;
+  line-height: 100%;
 }
 
-/* background: #FBDABB; */
+/*
+background: #FBDABB; */
 
 .call-to-action-section button:hover{
-  padding-top: 1.5rem;
   cursor: pointer;
   border-bottom: 0.5em solid #EE9972;
-  transition: 450ms;
-  transition-timing-function: ease-in-out;
 }
+
+
+/* 
+background-image: linear-gradient(#F4CE14 88%, #EE9972 12%);
+padding-top: 1.5rem;
+border-bottom: 0.5em solid #EE9972; 
+*/
 
 
 .homepage-section{
