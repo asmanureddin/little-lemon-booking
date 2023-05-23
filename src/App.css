@@ -76,9 +76,10 @@
 a:link{
   color: #495E57;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
   font-family: 'karla',sans-serif;
+  font-size: medium;
 }
 
 a:visited{
@@ -86,7 +87,8 @@ a:visited{
 }
 
 a:hover{
-  border-bottom: #FBDABB solid 1px;
+  font-weight: 800;
+  transition: 3s;
 }
 
 .header-div{
@@ -162,43 +164,54 @@ div.back-rect{
 }
 
 .call-to-action-section{
-  display: grid;
+  display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
   grid-template-columns: repeat(2,1fr);
   align-content: left;
 }
 
-.call-to-action-section button{
-  padding: 1rem;
+button{
   margin: 1rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-left: 0;
   background-color: #F4CE14;
-  border: none;
-  border-radius: 1em;
-  
-  height: 4.5rem ;
-  -webkit-transition: 2s ease-in-out  background;
-  -moz-transition: 2s ease-in-out background;
-  -o-transition: 2s ease-in-out background;
-  transition: 2s ease-in-out background;
-}
-
-.call-to-action-section button span{
   font-family: 'karla' , sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #495E57;
-  line-height: 100%;
+  border: none;
+  border-radius: 0.5em;
+  height: 3rem;
+  width: fit-content;
+  object-fit: cover;
+  -webkit-transition: 350ms border ease-in-out;
+  -moz-transition: 350ms border ease-in-out;
+  -o-transition: 350ms border ease-in-out;
+  transition: 250ms border ease-in-out;
 }
 
+span{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+  object-fit: cover;
+}
 /*
 background: #FBDABB; */
 
-.call-to-action-section button:hover{
+button:hover{
   cursor: pointer;
-  border-bottom: 0.5em solid #EE9972;
+  border-bottom: 0.4em solid #EE9972;
+}
+
+button:active{
+  background-color: #EE9972;
+  color: #EDEFEE;
+  transition: ease;
 }
 
 
@@ -213,6 +226,26 @@ border-bottom: 0.5em solid #EE9972;
   margin: 1rem;
   padding: 3rem;
 }
+
+.booking-div{
+  margin: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.booking-div form{
+  display: grid;
+}
+
+.field{
+  padding-top: 1em;
+  padding-bottom: 1rem;
+}
+
+.field label{
+  margin-right: 1rem;
+}
+
 
 .about{
   padding: 3rem;
@@ -250,7 +283,7 @@ border-bottom: 0.5em solid #EE9972;
 .about-left p{
   text-overflow: ellipsis;
   font-family: 'karla' , sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .chief-cooking-image{
@@ -274,6 +307,7 @@ border-bottom: 0.5em solid #EE9972;
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .footer-sec ul{

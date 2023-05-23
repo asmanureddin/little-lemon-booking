@@ -1,9 +1,10 @@
 import React from "react";
+import BookingPage from "./BookingPage";
 
 const CallToAction = () => {
     return(
         <div className="call-to-action-section">
-            <button><span>RESERVE A TABLE</span></button>
+            <button onClick={BookingPage}><span>RESERVE A TABLE</span></button>
             <button><span>ORDER NOW</span></button>
         </div>
     )
