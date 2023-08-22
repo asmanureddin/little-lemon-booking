@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -14,7 +15,7 @@ function App() {
       <Nav className="app-nav"/>
       <Header className="app-header"/>
       <Routes>
-        <Route path='/' element={<Homepage/>}/>
+        <Route path='/home' element={<Homepage/>}/>
         <Route path='/reservations' element={<BookingPage/>}/>
       </Routes>
       <About/>

@@ -2,19 +2,27 @@ import React, { useReducer, useState } from "react";
 import { ReactDOM } from "react";
 import { fetchAPI, submitAPI } from "./temp";
 
-
+let selectedTimes;
 
 // reducer function
+const reducerFunction = (state,  action) => {
+    console.log('reducer function state---',state)
+    if(action.status === 'reserved') {
+        state.id = state.id + 1
+        state.timeSlot = selectedTimes;
+        console.log('selectedTime / reducer function state AFTER---', state)
+        return({timeSlot: state.timeSlot})
+    }
+}
 
 
 
 
-
-const BookingForm = ({state, pickedTimes}) => {
+const BookingForm = () => {
     const [date,setDate] = useState();
     const [guests,setGuests] = useState();
     const [occasion,setOccasion] = useState();
-    
+    const [state , dispatch] = useReducer(reducerFunction, {id:0 , timeSlot: '00:00'})
 
     const handleSubmit = (e)=> {
         e.preventDefault();
@@ -29,11 +37,17 @@ const BookingForm = ({state, pickedTimes}) => {
         Can't wait to meet you!`);
     };
 
+    function pickTimes(selectedTime) {
+        dispatch({status: 'reserved'})
+        console.log('selectedTimes', selectedTime)
+        selectedTimes = selectedTime;
+    }
+
     const availableTimes = fetchAPI(new Date(date))
 
     return(
         <div className="booking-div">
-            <h1>Reserve a Table</h1>
+            <h1>Draft: Reserve a Table</h1>
             <form onSubmit={handleSubmit}>
                 <div className="field">
                     <label htmlFor="res-date">Choose Date</label>
@@ -43,7 +57,7 @@ const BookingForm = ({state, pickedTimes}) => {
                 </div>
                 <div className="field">
                     <label htmlFor="res-time">Choose Time</label>
-                    <select id="res-time" value= {state.timeSlot} onChange={e=> pickedTimes(e.target.value)}>
+                    <select id="res-time" value= {state.timeSlot} onChange={e=> pickTimes(e.target.value)}>
                         {availableTimes.map((value) => {
                             console.log('value----',value,'statetimeslot--',state.timeSlot)
                             return(<option id="time-options">{value}</option>)
