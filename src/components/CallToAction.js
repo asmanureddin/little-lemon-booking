@@ -1,11 +1,21 @@
 import React from "react";
-import BookingPage from "./BookingPage";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
+    
     return(
         <div className="call-to-action-section">
-            <button onClick={BookingPage}><span>RESERVE A TABLE</span></button>
-            <button><span>ORDER NOW</span></button>
+            <Link to='/reservations'>
+                <button>
+                    <span>RESERVE A TABLE</span>
+                </button>
+            </Link>
+            <Link to='/order'>
+            <button>
+                <span>ORDER NOW</span>
+            </button>
+            </Link>
+            
         </div>
     )
 }

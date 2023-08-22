@@ -14,6 +14,10 @@
   
 }
 
+h2{
+  color: #495E57;
+}
+
 .app-nav{
   display: grid;
   grid-area: app-nav;
@@ -223,29 +227,79 @@ border-bottom: 0.5em solid #EE9972;
 
 
 .homepage-section{
-  margin: 1rem;
-  padding: 3rem;
+  padding-top: 1rem;
 }
 
 .booking-div{
-  margin: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr );
 }
 
 .booking-div form{
   display: grid;
-}
-
-.field{
-  padding-top: 1em;
+  margin: 1rem;
+  padding-left: 5rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.field label{
-  margin-right: 1rem;
+.rest-image{
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
+.field{
+  display: grid;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: 'karla' , sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.field label{
+  color: #495E57;
+}
+
+.field input, .field select{
+  font-family: 'karla' , sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  border: none;
+  background-color: #EDEFEE;
+  color: #495E57;
+  padding: 0.5rem;
+}
+
+#reserve{
+  background-color:#F4CE14;
+  color: #495E57;
+  font-family: 'karla' , sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  border-radius: 0.5em;
+  height: 3rem;
+  object-fit: cover;
+  -webkit-transition: 350ms border ease-in-out;
+  -moz-transition: 350ms border ease-in-out;
+  -o-transition: 350ms border ease-in-out;
+  transition: 250ms border ease-in-out;
+}
+
+#reserve:hover{
+  cursor: pointer;
+  border-bottom: 0.4em solid #EE9972;
+}
+
+#reserve:active{
+  background-color: #EE9972;
+  color: #EDEFEE;
+  transition: ease;
+}
 
 .about{
   padding: 3rem;

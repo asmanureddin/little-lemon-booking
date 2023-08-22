@@ -7,6 +7,8 @@ import Header from './components/Header';
 import About from './components/About';
 import Homepage from './components/Homepage';
 import BookingPage from './components/BookingPage';
+import Menu from './components/Menu';
+import OrderNow from './components/OrderNow';
 
 
 function App() {
@@ -15,10 +17,13 @@ function App() {
       <Nav className="app-nav"/>
       <Header className="app-header"/>
       <Routes>
-        <Route path='/home' element={<Homepage/>}/>
+        <Route exact path='/home' element={<Homepage/>}/>
         <Route path='/reservations' element={<BookingPage/>}/>
+        <Route path='/menu' element={<Menu/>}/>
+        <Route path='/order' element={<OrderNow/>} />
+        <Route path='/about'element={<About/>} />
       </Routes>
-      <About/>
+      
       <Footer className="app-footer"/>
     </div>
   );
