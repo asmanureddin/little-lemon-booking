@@ -3,13 +3,6 @@ import { ReactDOM } from "react";
 import { fetchAPI, submitAPI } from "./temp";
 
 
-
-// reducer function
-
-
-
-
-
 const BookingForm = ({state, pickedTimes}) => {
     const [date,setDate] = useState();
     const [guests,setGuests] = useState();
