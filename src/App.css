@@ -227,7 +227,30 @@ border-bottom: 0.5em solid #EE9972;
 
 
 .homepage-section{
-  padding-top: 1rem;
+  
+}
+
+.specials{
+  background-color: #EDEFEE;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.group-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+}
+
+.card{
+  background-color: white;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .booking-div{
@@ -275,7 +298,17 @@ border-bottom: 0.5em solid #EE9972;
   padding: 0.5rem;
 }
 
+/*
+#res-date::after, #occasion::after{
+  color: #EE9972;
+  background-color: #F4CE14;
+}
+*/
+
 #reserve{
+  text-align: center;
+  justify-content: center;
+  width: 100%;
   background-color:#F4CE14;
   color: #495E57;
   font-family: 'karla' , sans-serif;

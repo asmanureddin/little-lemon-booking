@@ -1,6 +1,5 @@
-import React, { useState, useReducer } from "react";
+import React, { useReducer } from "react";
 import BookingForm from "./BookingForm";
-import { fetchAPI, submitAPI } from "./temp";
 
 let selectedTimes;
 
